@@ -60,7 +60,6 @@ internal fun PostItem(post: Post) {
 internal fun PostList(viewModel: MainViewModel = viewModel(), modifier: Modifier = Modifier) {
     val posts by viewModel.posts.observeAsState(emptyList())
 
-
     Log.d("PostList", "Observed posts: ${posts.size}")
 
     LazyColumn(modifier = modifier) {
